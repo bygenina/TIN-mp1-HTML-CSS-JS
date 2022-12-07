@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script type="application/javascript" src="../JavaScript/validationDepartmensForm.js"></script>
+    <script type="application/javascript" src="../JavaScript/validationCommon.js"></script>
+    <title>O.W.L</title>
+</head>
+
+
+<body>
+    <header>
+        <h1>O.W.L</h1>
+        <img src="../Images/owl_logo.png" width="100" height="100" alt="O.W.L logo">
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="../index.html">Strona główna</a>
+            </li>
+            <li>
+                <a href="../students/students.html">Uczni</a>
+            </li>
+            <li>
+                <a href="departmens.html">Działy</a>
+            </li>
+            <li>
+                <a href="../system/system.html">Projekty</a>
+            </li>
+        </ul>
+    </nav>
+
+<main>
+    <h2>Nowy dział</h2>
+
+    <form  novalidate onsubmit="return validateForm ();">
+        <label for="titleDepartmen">Nazwa działu:<span class="symbol-required">*</span></label>
+        <input type="text" name="titleDepartmen" id="titleDepartmen" required>
+        <span id="errorTitleDepartmen" class="errors-text"></span>
+        <label for="date">Data prezentacji:<span class="symbol-required">*</span></label>
+        <input type="date" name="date" id="date" min="2010-01-01" max="2030-01-01" required>
+        <span id="errorDate" class="errors-text"></span>
+
+        <div class="form-buttons">
+            <p id="errorsSummary" class="errors-text"></p>
+            <input type="submit" class="form-button-submit" value="Dodaj">
+            <a href="departmens.html" class="form-button-cancel">Anuluj</a>
+        </div>
+    </form>
+   
+</main>
+
+<footer>
+    <p>Yana Sierkova, s22706</p>
+</footer>
+
+
+</body>
+</html>

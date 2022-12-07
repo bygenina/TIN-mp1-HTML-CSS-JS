@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script type="application/javascript" src="../JavaScript/validationStudentForm.js"></script>
+    <title>O.W.L</title>
+</head>
+
+
+<body>
+    <header>
+        <h1>O.W.L</h1>
+        <img src="../Images/owl_logo.png" width="100" height="100" alt="O.W.L logo">
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="../index.html">Strona główna</a>
+            </li>
+            <li>
+                <a href="students.html">Uczni</a>
+            </li>
+            <li>
+                <a href="../departmens/departmens.html">Działy</a>
+            </li>
+            <li>
+                <a href="../system/system.html">Projekty</a>
+            </li>
+        </ul>
+    </nav>
+
+<main>
+    <h2>Szczegóły studenta</h2>
+
+    <form>
+        <label for="firstName">Imię:<span class="symbol-required">*</span></label>
+        <input type="text" name="firstName" id="firstName" value="Jakub" disabled>
+        <span id="errorFirstName" class="errors-text"></span>
+        <label for="lastName">Nazwisko:<span class="symbol-required">*</span></label>
+        <input type="text" name="lastName" id="lastName" value="Kowalski" disabled>
+        <span id="errorLastName" class="errors-text"></span>
+        <label for="titleJob">Nazwa pracy:<span class="symbol-required">*</span></label>
+        <input type="text" name="titleJob" id="titleJob" value="Fraktale w życiu" disabled>
+        <span id="errorTitleJob" class="errors-text"></span>
+        <label for="school">Nazwa szkoly:<span class="symbol-required">*</span></label>
+        <input type="text" name="school" id="school" value="SGH" disabled>
+        <span id="errorSchool" class="errors-text"></span>
+        <label for="school">Numer klasy:<span class="symbol-required">*</span></label>
+        <input type="number" name="class" id="class" min="7" max="12" value="10" disabled>
+        <span id="errorClass" class="errors-text"></span>
+
+        <div class="form-buttons">
+            <p></p>
+            <a href="editing.html" class="form-button-cancel">Edytuj</a>
+        </div>
+    </form>
+
+    <h2>Szczegóły projektu</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nazwa działu</th>
+                <th>Data prezentacji</th>
+                <th>Data oddania</th>
+                <th>Ocena</th>
+                <th>Opis</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Matematyka</td>
+                <td>2023-03-30</td>
+                <td>2023-02-24</td>
+                <td>3</td>
+                <td>brak</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="form-buttons">
+        <p></p>
+        <a href="editing.html" class="form-button-return">Powrót</a>
+    </div>
+   
+</main>
+
+
+<footer>
+    <p>Yana Sierkova, s22706</p>
+</footer>
+
+
+</body>
+</html>

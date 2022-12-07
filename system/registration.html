@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script type="application/javascript" src="../JavaScript/validationSystemForm.js"></script>
+    <script type="application/javascript" src="../JavaScript/validationCommon.js"></script>
+    <title>O.W.L</title>
+</head>
+
+
+<body>
+    <header>
+        <h1>O.W.L</h1>
+        <img src="../Images/owl_logo.png" width="100" height="100" alt="O.W.L logo">
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="../index.html">Strona główna</a>
+            </li>
+            <li>
+                <a href="../students/students.html">Uczni</a>
+            </li>
+            <li>
+                <a href="../departmens/departmens.html">Działy</a>
+            </li>
+            <li>
+                <a href="system.html">Projekty</a>
+            </li>
+        </ul>
+    </nav>
+
+<main>
+    <h2>Nowy projekt</h2>
+
+    <form class="form" novalidate onsubmit="return validateForm ();">
+        <label for="student">Student:<span class="symbol-required">*</span></label>
+        <select name="student" id="student">
+            <option>--Wybierz studenta--</option>
+            <option value="1">Jakub Kowalski</option>
+        </select>
+        <span id="errorStudent" class="errors-text"></span>
+        <label for="titleDepartmen">Nazwa działu:<span class="symbol-required">*</span></label>
+        <select name="titleDepartmen" id="titleDepartmen">
+            <option>--Wybierz dział--</option>
+            <option value="1">Matematyka</option>
+        </select>
+        <span id="errorTitleDepartmen" class="errors-text"></span>
+        <label for="date">Data oddania:<span class="symbol-required">*</span></label>
+        <input type="date" name="date" id="date" min="2010-01-01" max="2030-01-01" required>
+        <span id="errorDate" class="errors-text"></span>
+        <label for="rating">Ocena:</label>
+        <input type="number" name="rating" id="rating" min="1" max="3" required>
+        <span id="errorRating" class="errors-text"></span>
+        <label for="title">Opis projekta:</label>
+        <input type="text" name="title" id="title" required>
+        <span id="errotTitle" class="errors-text"></span>
+
+        <div class="form-buttons">
+            <p id="errorsSummary" class="errors-text"></p>
+            <input type="submit" class="form-button-submit" value="Dodaj">
+            <a href="system.html" class="form-button-cancel">Anuluj</a>
+        </div>
+    </form>
+   
+</main>
+
+<footer>
+    <p>Yana Sierkova, s22706</p>
+</footer>
+
+
+</body>
+</html>

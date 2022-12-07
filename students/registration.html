@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script type="application/javascript" src="../JavaScript/validationCommon.js"></script>
+    <script type="application/javascript" src="../JavaScript/validationStudentForm.js"></script>
+    <title>O.W.L</title> 
+</head>
+
+
+<body>
+    <header>
+        <h1>O.W.L</h1>
+        <img src="../Images/owl_logo.png" width="100" height="100" alt="O.W.L logo">
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="../index.html">Strona główna</a>
+            </li>
+            <li>
+                <a href="students.html">Uczni</a>
+            </li>
+            <li>
+                <a href="../departmens/departmens.html">Działy</a>
+            </li>
+            <li>
+                <a href="../system/system.html">Projekty</a>
+            </li>
+        </ul>
+    </nav>
+
+<main>
+    <h2>Nowy student</h2>
+
+    <form class="form" novalidate onsubmit="return validateForm ();">
+        <label for="firstName">Imię:<span class="symbol-required">*</span></label>
+        <input type="text" name="firstName" id="firstName" placeholder="2-60 znaków" required>
+        <span id="errorFirstName" class="errors-text"></span>
+        <label for="lastName">Nazwisko:<span class="symbol-required">*</span></label>
+        <input type="text" name="lastName" id="lastName" placeholder="2-60 znaków" required>
+        <span id="errorLastName" class="errors-text"></span>
+        <label for="titleJob">Nazwa pracy:<span class="symbol-required">*</span></label>
+        <input type="text" name="titleJob" id="titleJob" placeholder="2-60 znaków" required>
+        <span id="errorTitleJob" class="errors-text"></span>
+        <label for="school">Nazwa szkoly:<span class="symbol-required"></span></label>
+        <input type="text" name="school" id="school" required>
+        <span id="errorSchool" class="errors-text"></span>
+        <label for="class">Numer klasy:<span class="symbol-required"></span></label>
+        <input type="number" name="class" id="class" min="7" max="12" required>
+        <span id="errorClass" class="errors-text"></span>
+
+        <div class="form-buttons">
+            <p id="errorsSummary" class="errors-text"></p>
+            <input type="submit" class="form-button-submit" value="Dodaj">
+            <a href="students.html" class="form-button-cancel">Anuluj</a>
+        </div>
+    </form>
+   
+</main>
+
+<footer>
+    <p>Yana Sierkova, s22706</p>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script type="application/javascript" src="../JavaScript/validationStudentForm.js"></script>
+    <title>O.W.L</title>
+</head>
+
+
+<body>
+    <header>
+        <h1>O.W.L</h1>
+        <img src="../Images/owl_logo.png" width="100" height="100" alt="O.W.L logo">
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="../index.html">Strona główna</a>
+            </li>
+            <li>
+                <a href="students.html">Uczni</a>
+            </li>
+            <li>
+                <a href="../departmens/departmens.html">Działy</a>
+            </li>
+            <li>
+                <a href="../system/system.html">Projekty</a>
+            </li>
+        </ul>
+    </nav>
+
+<main>
+    <h2>Edytuj student</h2>
+
+    <form>
+        <label for="firstName">Imię:<span class="symbol-required">*</span></label>
+        <input type="text" name="firstName" id="firstName" value="Jakub" required>
+        <span id="errorFirstName" class="errors-text"></span>
+        <label for="lastName">Nazwisko:<span class="symbol-required">*</span></label>
+        <input type="text" name="lastName" id="lastName" value="Kowalski" required>
+        <span id="errorLastName" class="errors-text"></span>
+        <label for="titleJob">Nazwa pracy:<span class="symbol-required">*</span></label>
+        <input type="text" name="titleJob" id="titleJob" value="Fraktale w życiu" required>
+        <span id="errorTitleJob" class="errors-text"></span>
+        <label for="school">Nazwa szkoly:<span class="symbol-required">*</span></label>
+        <input type="text" name="school" id="school" value="SGH" required>
+        <span id="errorSchool" class="errors-text"></span>
+        <label for="school">Numer klasy:<span class="symbol-required">*</span></label>
+        <input type="number" name="class" id="class" min="7" max="12" value="10" required>
+        <span id="errorClass" class="errors-text"></span>
+
+        <div class="form-buttons">
+            <p></p>
+            <input type="submit" class="form-button-submit" value="Dodaj">
+            <a href="students.html" class="form-button-cancel">Anuluj</a>
+        </div>
+    </form>
+   
+</main>
+
+<footer>
+    <p>Yana Sierkova, s22706</p>
+</footer>
+
+
+</body>
+</html>
